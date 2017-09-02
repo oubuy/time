@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var arr = [1, 2, 33, 44, 2, 33];
+        var arr2 = [];
+        for (var i = 0; i < arr.length; i++) {
+            var flag = true;
+            for (var j = 0; j < arr2.length; j++) {
+                if (arr[i] == arr2[j]) {
+                    flag = false;
+                    break;
+                }
+
+            }
+            if (flag) {
+                arr2[j] = arr[i];
+            }
+
+        }
+        console.log(arr2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

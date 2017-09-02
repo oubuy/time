@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var arr=[2,22,44,22,44];
+        var arr1=[];
+        for(var i=0; i<arr.length; i++){
+            //indexOf()  在数组里面找一个数，如果找不到，则返回-1
+                    if(arr1.indexOf(arr[i]) == -1){
+                        arr1[arr1.length]=arr[i];
+                    }
+                }
+        console.log(arr1);
+//错误法
+//        var arr=[2,22,44,22,44];
+//        var arr1=[];
+//        for(var i=0;i<arr.length;i++){
+//            for(var j=0;j<i;j++){
+//                if(arr[j]==arr[i]){
+//                    break;
+//                }else{
+//                    arr1[arr1.length]=arr[j];
+//
+//                }
+//            }
+//        }
+//        console.log(arr1);
+//        这是对的
+//        var arr = [1, 2, 1, 2, 40, 4];
+//        var arr1 = [arr[0]];
+//        for (var i = 0; i < arr.length; i++) {
+//            var flag = false;
+//            for (var j = 0; j < arr1.length; j++) {
+//                if (arr[i] == arr1[j]) {
+//                    flag = true;
+//                    break;
+//                }
+//            }
+//            if (!flag) {
+//                arr1[arr1.length] = arr[i];
+//            }
+//        }
+//        console.log(arr1);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
